@@ -24,6 +24,14 @@
   opacity: 1;
 }
 
+.enlargecls{
+  width: 100% !important;
+}
+
+.enlargecls .overlay{
+  width: 97% !important;
+}
+
 .overlay {
     position: absolute;
     bottom: 162px;
@@ -32,5 +40,6 @@
     width: 87%;
     font-size: 20px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    color:white;
 }

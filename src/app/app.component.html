@@ -1,6 +1,6 @@
 <div style="display:flex; flex-direction:column">
-	<div style="width: 90%;margin: 0 auto;">
-		<img style="width:100%;max-height: 800px;object-fit: cover;" src="{{srcstring}}">
+	<div style="width: 90%;margin: 0 auto;" [ngClass]="{'enlargecls': enlarge === true}" (click)="enlargeclick()">
+		<img style="width:100%;max-height: 800px;object-fit: cover;"  src="{{srcstring}}">
     <div *ngIf="srcstring !== '' && (value === '2' || value === '5')" class="overlay">This is caption text</div>
 </div>
 <div class="rowflex">
