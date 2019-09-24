@@ -1,3 +1,18 @@
-p {
-  font-family: Lato;
+.rowflex
+{
+  display: flex;
+  flex-wrap: nowrap;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.bg{
+  width: 160px;
+  margin: 10px;
+}
+
+.image{
+  width: 100%;
+  height: 127px;
 }
