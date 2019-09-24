@@ -1,26 +1,38 @@
+<div style="display:flex; flex-direction:column">
+	<div style="width: 90%;margin: 0 auto;">
+		<img style="width:100%;max-height: 800px;object-fit: cover;" src="{{srcstring}}">
+    <div *ngIf="srcstring !== '' && (value === '2' || value === '5')" class="overlay">This is caption text</div>
+</div>
 <div class="rowflex">
-	<div class="bg">
-		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image1.jpg" class="image">
+	<div class="bg" (click)="imgclick('1')">
+		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image1.jpg" [ngClass]="{'opacitycls': value === '1'}" class="image">
 </div>
-<div class="bg">
-  		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image2.jpg" class="image" >
+<div class="bg" (click)="imgclick('2')">
+  		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image2.jpg" [ngClass]="{'opacitycls': value === '2'}" class="image" >
 </div>
-<div class="bg">
-    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image3.jpg" class="image" >
+<div class="bg" (click)="imgclick('3')">
+    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image3.jpg" [ngClass]="{'opacitycls': value === '3'}" class="image" >
 </div>
-<div class="bg">
-    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image4.jpg" class="image" >
+<div class="bg" (click)="imgclick('4')">
+    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image4.jpg" [ngClass]="{'opacitycls': value === '4'}" class="image" >
 </div>
-<div class="bg">
-    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image5.jpg" class="image" >
+<div class="bg" (click)="imgclick('5')">
+    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image5.jpg" [ngClass]="{'opacitycls': value === '5'}" class="image" >
 </div>
-<div class="bg">
-    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image6.jpg" class="image" >
+<div class="bg" (click)="imgclick('6')">
+    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image6.jpg" [ngClass]="{'opacitycls': value === '6'}" class="image" >
 </div>
-<div class="bg">
-    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image7.jpg" class="image" >
+<div class="bg" (click)="imgclick('7')">
+    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image7.jpg" [ngClass]="{'opacitycls': value === '7'}" class="image" >
 </div>
-<div class="bg">
-    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image8.jpg" class="image" >
+<div class="bg" (click)="imgclick('8')">
+    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image8.jpg" [ngClass]="{'opacitycls': value === '8'}" class="image" >
+</div>
+<div class="bg" (click)="imgclick('9')">
+    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image9.jpg" class="image" [ngClass]="{'opacitycls': value === '9'}" >
+</div>
+<div class="bg" (click)="imgclick('10')">
+    		<img src="https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image10.jpg" class="image"  [ngClass]="{'opacitycls': value === '10'}">
+</div>
 </div>
 </div>
