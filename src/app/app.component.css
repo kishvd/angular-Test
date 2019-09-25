@@ -1,3 +1,5 @@
+
+
 .rowflex
 {
   display: flex;
@@ -25,21 +27,36 @@
 }
 
 .enlargecls{
-  width: 100% !important;
+    min-height:100%;
+    min-width:100%;
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:0; bottom:0;
+    margin:auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
-.enlargecls .overlay{
-  width: 97% !important;
+.overlay1{
+  width: 100% !important;
+  bottom: 0 !important;
 }
 
 .overlay {
     position: absolute;
-    bottom: 162px;
+    bottom: 169px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    width: 87%;
+    width: 88%;
     font-size: 20px;
     padding: 20px;
     text-align: left;
     color:white;
+}
+
+.enlargediv
+{
+width: 90%;
+margin: 0 auto;
 }

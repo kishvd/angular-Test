@@ -13,15 +13,10 @@ export class AppComponent {
   imgclick(val) {
     this.value = val;
     this.srcstring = "https://cdn.jsdelivr.net/gh/kishvd/angular-Test@master/src/assets/image" + val + ".jpg";
-
   }
 
-  enlargeclick(){
-    console.log("val");
-
-this.enlarge = !this.enlarge;
-
-  console.log(this.enlarge);
+  enlargeclick() {
+    this.enlarge = !this.enlarge;
   }
 }
 
